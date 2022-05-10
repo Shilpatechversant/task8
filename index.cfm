@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/style.css">
-        <title>Task 7</title>
+        <title>Task 8</title>
     </head>
         <body>
             <section>         
@@ -12,7 +12,7 @@
                         <form name="cftask_7" action="" method ="post">
                             <div class="form-group">
                                 <label>Name</label>
-                                <input type="text" name="first_name" required placeholder="First Name" autocomplete="off">
+                                <input type="text" name="first_name" required autocomplete="off">
                             </div>
                             <div class="form-group">
                                 <label>Value</label>
@@ -20,7 +20,7 @@
                             </div>
                             <div class="form-btn-control">
                                 <input type="submit" class="common-btn" name="submit" value="Submit" />
-                             </div>
+                            </div>
                         </form> 
                         <cfif structKeyExists(form,'Submit')>
                             <cfset key=form.first_name>
@@ -29,8 +29,8 @@
                             <cfset struct_data=data.displayFunc(key,value)>
                             <cfdump var="#struct_data#">
                         </cfif>     
+                    </div>
                 </div>
-            </div>
-        </section>
-    </body>
+            </section>
+        </body>
 </html>
