@@ -1,4 +1,4 @@
-    <cffunction  name="displayFunc" access="remote">
+    <cffunction  name="displayFunc" access="public" output="true">
         <cfargument  name="key" type="string" required="true">
         <cfargument  name="value" type="string" required="true">
         <cfapplication name="structures" sessionTimeout=#CreateTimeSpan(0, 0, 0, 60)# sessionManagement="Yes">
